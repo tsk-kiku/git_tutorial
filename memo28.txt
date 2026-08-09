@@ -1,3 +1,22 @@
+メモ
+	git add
+		ステージに追加
+	git commit
+		ステージにあるものをローカルリポジトリに反映
+	git diff
+		git addしていない変更を表示
+	git diff --staged
+		git addしたけど未恋っとの変更を表示
+
+	git pull <remote_ref> <branchname>
+	※git pull origin master
+	
+	git push <remote_ref> <branchname>
+	※git push origin master
+	★pushする前にpullすること
+		ローカルリポジトリをリモートリポジトリに反映
+	
+
 # 28
 Rawとは
 	実際のデータ
