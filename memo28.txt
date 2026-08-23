@@ -6,7 +6,7 @@
 	git diff
 		git addしていない変更を表示
 	git diff --staged
-		git addしたけど未恋っとの変更を表示
+		git addしたけど未コミットの変更を表示
 
 	git pull <remote_ref> <branchname>
 	※git pull origin master
@@ -17,8 +17,32 @@
 		ローカルリポジトリをリモートリポジトリに反映
 	
 
-# 28
-Rawとは
-	実際のデータ
-Blameとは
-	いつどんな修正が行われたか
+# 28 GitHubの画面を確認しよう
+	Rawとは
+		実際のデータ
+	Blameとは
+		いつどんな修正が行われたか
+
+2026.08.23
+# 29 コマンドにエイリアスを付けよう
+	git config --global alias.ci commit
+	git config --global alias.st status
+	git config --global alias.br branch
+	git config --global alias.co checkout
+		※--globalを付けることで、現在のプロジェクトだけではなく全てのプロジェクトが対象となる。
+
+2026.08.23
+# 30 バージョン管理しないファイルは無視しよう
+	.gitignoreファイルに指定する
+		.gitignore
+			# 指定したファイルを除外
+			index.html
+			# ルートディレクトリを指定
+			/root.html
+
+2026.08.23
+# 31 変更を元に戻そう
+	git checkout -- ファイル名
+	git checkout -- ディレクトリ名
+	# 全変更を取り消す
+	git checkout -- .
