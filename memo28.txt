@@ -52,3 +52,18 @@
 	git checkout -- ディレクトリ名
 	# 全変更を取り消す
 	git checkout -- .
+
+2026.09.02
+# 32 ステージした変更を取り消そう
+	git reset HEAD index.html
+
+	例）
+		git add memo28.txt
+		git status
+			コミットしていないファイルがあるよ
+		git reset memo28.txt
+		git status
+			ステージに追加していないファイルがあるよ
+
+		
+
