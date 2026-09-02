@@ -8,6 +8,9 @@
 	git diff --staged
 		git addしたけど未コミットの変更を表示
 
+	git checkout HEAD ファイル名
+		変更を取り消し※HEADは最新のコミットの状態に戻すことを意味する
+
 	git pull <remote_ref> <branchname>
 	※git pull origin master
 	
@@ -16,6 +19,9 @@
 	★pushする前にpullすること
 		ローカルリポジトリをリモートリポジトリに反映
 	
+	git config --get remote.origin.url
+		URLの取得
+
 
 # 28 GitHubの画面を確認しよう
 	Rawとは
