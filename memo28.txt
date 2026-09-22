@@ -20,6 +20,7 @@
 		ローカルリポジトリをリモートリポジトリに反映
 	
 	git config --get remote.origin.url
+	git remote -v
 		URLの取得
 
 
@@ -62,7 +63,7 @@
 		git status
 			コミットしていないファイルがあるよ
 		git reset memo28.txt
-		git status
+	git 	git status
 			ステージに追加していないファイルがあるよ
 
 2026.09.22
