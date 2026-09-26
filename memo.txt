@@ -72,3 +72,16 @@
 		※リモートリポジトリにpushしたものに対しての使用はNG
 		→git revert <コミットiD>でコミットを打ち消す新しいコミットを作成する。
 
+2026.09.26
+# 34 リモートの情報を確認しよう
+	git remote
+	git remote -v
+
+# 35 リモートリポジトリを追加しよう
+	１．まず、GitHubから新しいリポジトリを作成する。
+	２．新しいリポジトリへの接続情報を追加する。
+		git remote add <リモート名> <リモートURL>
+		例）
+			git remote add git_tutorial_bak20260926 https://github.com/tsk-kiku/git_tutorial_bak20260926.git
+	３．git push git_tutorial_bak20260926 master
+		ローカルのmasterをリモートリポジトリ「git_tutorial_bak20260926」にpushしている。
